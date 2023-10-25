@@ -1,1 +1,8 @@
+p,
+.container-fluid {
+  font-family: "Playfair Display", serif;
+}
 
+h1 {
+  font-size: 40px;
+}
