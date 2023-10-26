@@ -4,5 +4,10 @@ p,
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
+}
+
+div.intro {
+  max-width: 600px;
+  margin: 0 auto;
 }
