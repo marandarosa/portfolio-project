@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(33, 37, 41);
   --primary-color-faded: rgba(33, 37, 41, 0.65);
+  --primary-font: Georgia, "Times New Roman", Times, serif;
 }
 
 .container-fluid {
@@ -8,12 +9,12 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: var(--primary-font);
   color: white;
   background-color: #000000;
   opacity: 1;
   background-image: radial-gradient(var(--primary-color) 1.4px, #000000 1.4px);
-  background-size: 20px 20px;
+  background-size: 24px 24px;
 }
 
 .header,
@@ -31,8 +32,6 @@ body {
   }
   img.rounded-corners {
     scale: 0.7;
-    position: relative;
-    left: -15px;
   }
 }
 
@@ -44,48 +43,29 @@ body {
   }
   img.rounded-corners {
     scale: 0.6;
-    position: relative;
-    left: -25px;
-    top: 10px;
   }
 }
 
 h1 {
   font-size: 36px;
-  text-align: center;
 }
 
 h3 {
   font-size: 22px;
-  text-align: center;
-}
-
-img.rounded-corners {
-  border-radius: 50%;
-  max-width: 150px;
-  justify-content: center;
-}
-
-.intro {
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .hp-button {
-  margin: 0;
   display: flex;
   justify-content: center;
 }
 
 .hp-button button {
   font-size: 14px;
-  border-radius: 50px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
 .hp-button button:hover {
-  color: white;
   background-color: var(--primary-color);
 }
 
@@ -125,4 +105,23 @@ img.rounded-corners {
 .home-project-link a {
   color: white;
   text-decoration: none;
+}
+
+.about-section {
+  margin-top: 20px;
+}
+
+.about-paragraph {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.about-button {
+  width: 200px;
+  margin: 0px 15px;
+}
+
+img.rounded-corners {
+  border-radius: 5px;
+  max-width: 250px;
 }
