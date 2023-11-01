@@ -17,41 +17,21 @@ body {
   background-size: 24px 24px;
 }
 
-.header,
-.tech-stack {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: var(--primary-color-faded);
-}
-
-@media (max-width: 414px) {
-  h1,
-  h3 {
-    scale: 0.85;
-    line-height: 1em;
-  }
-  img.rounded-corners {
-    scale: 0.7;
-  }
-}
-
-@media (max-width: 280px) {
-  h1,
-  h3 {
-    scale: 0.75;
-    line-height: 1em;
-  }
-  img.rounded-corners {
-    scale: 0.6;
-  }
-}
-
 h1 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 h3 {
   font-size: 22px;
+}
+
+/* Home Page */
+.header {
+  margin: 100px 0px;
+}
+
+.tech-stack {
+  padding: 50px;
 }
 
 .hp-button {
@@ -69,25 +49,23 @@ h3 {
   background-color: var(--primary-color);
 }
 
-.projects-homepage {
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: var(--primary-color-faded);
+  height: 100%;
+  border-radius: 5px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
-.project-grid-home {
-  margin: 0px auto;
-  padding: 2px;
-  background-color: var(--primary-color);
-  border: black solid 3px;
-  border-radius: 20px;
+.gridscroll {
+  display: inline-block;
 }
 
-.project-grid-home img {
-  border-radius: 15px;
-}
-
-.project-grid-home:hover {
-  border-color: white;
-  transition: 150ms ease-in-out;
+.gridscroll img {
+  margin-right: 22px;
 }
 
 .skills-container {
@@ -107,8 +85,9 @@ h3 {
   text-decoration: none;
 }
 
+/* About Page */
 .about-section {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .about-paragraph {
@@ -118,10 +97,21 @@ h3 {
 
 .about-button {
   width: 200px;
-  margin: 0px 15px;
+  margin: 5px 15px;
 }
 
 img.rounded-corners {
   border-radius: 5px;
   max-width: 250px;
+}
+
+/* Project Page*/
+.project-desc img {
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.project-desc a {
+  text-decoration: none;
+  color: white;
 }
