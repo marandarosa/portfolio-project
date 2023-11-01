@@ -90,6 +90,10 @@ h3 {
   margin-top: 25px;
 }
 
+.about-section h1 {
+  margin-top: 75px;
+}
+
 .about-paragraph {
   max-width: 75%;
   margin: 0 auto;
@@ -106,6 +110,10 @@ img.rounded-corners {
 }
 
 /* Project Page*/
+.project-header {
+  margin-top: 75px;
+}
+
 .project-desc img {
   max-width: 500px;
   border-radius: 5px;
@@ -114,4 +122,9 @@ img.rounded-corners {
 .project-desc a {
   text-decoration: none;
   color: white;
+}
+
+/* Contact */
+.contact-info {
+  font-size: 20px;
 }
