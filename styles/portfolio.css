@@ -1,7 +1,51 @@
 :root {
   --primary-color: rgb(33, 37, 41);
   --primary-color-faded: rgba(33, 37, 41, 0.65);
+  --secondary-color: #0179cb;
   --primary-font: Georgia, "Times New Roman", Times, serif;
+}
+
+/* NavBar*/
+@media (max-width: 414px) {
+  .nav-header {
+    display: none;
+  }
+  nav li a {
+    font-weight: bold;
+  }
+}
+
+.nav-header {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-pane {
+  background-color: var(--primary-color);
+  padding: 20px 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+  transition: all 150ms ease-in-out;
 }
 
 .container-fluid {
@@ -13,25 +57,35 @@ body {
   color: white;
   background-color: #000000;
   opacity: 1;
-  background-image: radial-gradient(var(--primary-color) 1.4px, #000000 1.4px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(var(--primary-color) 1.5px, #000000 2.5px);
+  background-size: 30px 30px;
 }
 
 h1 {
+  margin: 0px 5px;
   font-size: 48px;
 }
 
 h3 {
+  margin: 0px 5px;
   font-size: 22px;
 }
 
 /* Home Page */
 .header {
-  margin: 150px 0px 50px 0px;
+  margin: 125px 0px 75px 0px;
 }
 
 .tech-stack {
+  margin: 0 auto;
+  max-width: 350px;
   padding: 50px;
+  border-radius: 15px;
+  background-color: var(--primary-color-faded);
+}
+
+.tech-stack img {
+  width: 35px;
 }
 
 .hp-button {
@@ -47,6 +101,7 @@ h3 {
 
 .hp-button button:hover {
   background-color: var(--primary-color);
+  transition: all 150ms ease-in-out;
 }
 
 .scroll-container {
