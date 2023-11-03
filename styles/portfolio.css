@@ -15,6 +15,12 @@
   }
 }
 
+@media (max-width: 572px) {
+  div.tech-stack {
+    max-width: 350px;
+  }
+}
+
 .nav-header {
   text-decoration: none;
   color: white;
@@ -78,7 +84,7 @@ h3 {
 
 .tech-stack {
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 600px;
   padding: 50px;
   border-radius: 15px;
   background-color: var(--primary-color-faded);
@@ -111,7 +117,7 @@ h3 {
   background: var(--primary-color-faded);
   height: 100%;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
