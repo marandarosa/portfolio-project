@@ -2,7 +2,7 @@
   --primary-color: rgb(33, 37, 41);
   --primary-color-faded: rgba(33, 37, 41, 0.65);
   --secondary-color: #0179cb;
-  --primary-font: Georgia, "Times New Roman", Times, serif;
+  --secondary-font: "Chakra Petch", sans-serif;
 }
 
 /* NavBar*/
@@ -22,6 +22,7 @@
 }
 
 .nav-header {
+  font-family: var(--secondary-font);
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -59,7 +60,7 @@ nav li.active a {
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   background-color: #000000;
   opacity: 1;
@@ -74,7 +75,7 @@ h1 {
 
 h3 {
   margin: 0px 5px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 /* Home Page */
@@ -206,4 +207,37 @@ img.rounded-corners {
 
 .contact-links a {
   font-size: 16px;
+}
+
+/* Footer */
+
+footer {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  border-radius: 15px;
+  font-family: var(--secondary-font);
+}
+
+.contact-icons a {
+  color: white;
+  padding: 9px 15px;
+  margin: 5px 5px;
+  font-size: 28px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.work-inquiry {
+  border-radius: 15px;
+  background-color: var(--primary-color-faded);
 }
