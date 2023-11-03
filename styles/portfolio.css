@@ -53,6 +53,7 @@ li a {
 }
 
 li a:hover,
+.project-desc h4:hover,
 nav li.active a {
   color: var(--secondary-color);
   transition: all 150ms ease-in-out;
