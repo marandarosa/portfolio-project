@@ -116,11 +116,23 @@ h4 {
   border-radius: 5px;
 }
 
-.tech-stack img {
-  width: 40px;
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.skills img {
+  width: max-content;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 25%;
   padding: 5px 5px;
+}
+
+@media (max-width: 572px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .hp-button {
@@ -232,7 +244,7 @@ img.rounded-corners {
 
 .project-desc p {
   font-size: 14px;
-  line-height: 10px;
+  line-height: 15px;
   color: var(--secondary-color);
 }
 
@@ -293,6 +305,7 @@ footer p {
 }
 
 .proj-footer {
+  padding: 5px 5px;
   margin-top: 75px;
 }
 
